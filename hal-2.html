@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Kendaraan</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        article {
+            padding: 20px;
+        }
+
+        h2 {
+            width: 60%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        form {
+            width: 60%;
+            margin: auto;
+        }
+
+        fieldset {
+            padding: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .inline {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Example Semantic Web with HTML5</h1>
+    </header>
+
+    <nav>
+        <a href="index.html"> Home</a>
+        <a href="hal-1.html"> Link 1</a>
+        <a href="hal-2.html"> Link 2</a>
+        <a href="hal-3.html"> Link 3</a>
+        <a href="hal-4.html"> Link 4</a>
+        <a href="hal-5.html"> Link 5</a>
+    </nav>
+
+    <article>
+        <h2>Form Pemesanan Kendaraan</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Formulir Pemesanan Kendaraan</legend>
+
+                <label for="nama">Nama Pemesan:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="alamat">Alamat Pengiriman:</label>
+                <textarea id="alamat" name="alamat" required></textarea>
+
+                <label for="telp">Nomor Telepon:</label>
+                <input type="tel" id="telp" name="telp" required>
+
+                <label for="tanggal">Tanggal Sewa:</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+
+                <label for="kembali">Tanggal Pengembalian:</label>
+                <input type="date" id="kembali" name="kembali" required>
+
+                <label>Jenis Kendaraan:</label>
+                <div class="inline">
+                    <input type="radio" name="jenis" value="mobil" required> Mobil
+                </div>
+                <div class="inline">
+                    <input type="radio" name="jenis" value="motor"> Motor
+                </div>
+
+                <label for="model">Model Kendaraan:</label>
+                <input type="text" id="model" name="model">
+
+                <label for="plat">Nomor Plat (opsional):</label>
+                <input type="text" id="plat" name="plat">
+
+                <label>Asuransi Tambahan:</label>
+                <div class="inline">
+                    <input type="radio" name="asuransi" value="ya" required> Ya
+                </div>
+                <div class="inline">
+                    <input type="radio" name="asuransi" value="tidak"> Tidak
+                </div>
+
+                <label for="catatan">Catatan Khusus:</label>
+                <textarea id="catatan" name="catatan"></textarea>
+
+                <button type="submit">Kirim</button>
+
+            </fieldset>
+        </form>
+    </article>
+
+    <footer>
+        Created by Ariprim &copy; 2026
+    </footer>
+
+</body>
+</html>
