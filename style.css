@@ -41,6 +41,6 @@ p {
 }
 
 @font-face {
-    font-family: 'font';
-    src: url("font/Milk Yogurt.otf") format("opentype");
+    font-family: 'milk_yogurt';
+    src: url("font/milk-yogurt.otf") format("opentype");
 }
