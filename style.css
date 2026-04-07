@@ -44,3 +44,7 @@ p {
     font-family: 'milk_yogurt';
     src: url("font/milk-yogurt.otf") format("opentype");
 }
+
+h1, .par {
+    font-family: 'milk_yogurt' !important;
+}
