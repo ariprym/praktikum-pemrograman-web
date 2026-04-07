@@ -37,14 +37,10 @@ p {
 }
 
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'milk_yogurt';
 }
 
 @font-face {
     font-family: 'milk_yogurt';
     src: url("font/milk-yogurt.otf") format("opentype");
-}
-
-h1, .par {
-    font-family: 'milk_yogurt' !important;
 }
